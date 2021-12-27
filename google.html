@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="dark:bg-zinc-800">
+  <!--Navbar -->
+  <div class="flex justify-end text-sm space-x-4 pt-3 pr-4 items-center dark:text-white">
+    <a href="#" class="">Gmail</a>
+    <a href="#" class="">Gambar</a>
+    <a href="#" class="ml-1">
+      <svg class="w-6 h-6 fill-current text-gray-600 dark:text-gray-100" focusable="false" viewBox="0 0 24 24"><path d="M6,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM16,6c0,1.1 0.9,2 2,2s2,-0.9 2,-2 -0.9,-2 -2,-2 -2,0.9 -2,2zM12,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2z"></path></svg>
+    </a>
+    <button class="mr-1 px-7 pt-1 py-2 rounded text-white bg-sky-600 hover:bg-sky-600/90 dark:text-black dark:bg-blue-300/80 dark:hover:bg-blue-300"><span class="text-base">Login</span></button>
+  </div>
+
+  <!--Main Content -->
+  <main>
+    <img class="hidden dark:block mx-auto mt-2 mb-6" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_light_color_272x92dp.png" alt="Google Logo">
+    <img class="block dark:hidden mx-auto mt-2 mb-6" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo">
+    <div>
+      <div class="flex mx-auto px-8 w-11/12 md:w-9/12 lg:w-7/12 xl:w-1/2 rounded-full dark:bg-transparent border dark:border-gray-500 dark:hover:bg-neutral-700 dark:hover:border-transparent pl-4 py-2 hover:shadow-md">
+        <svg class="w-6 h-6 fill-gray-400 dark:fill-gray-500" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path></svg>
+        <input type="text" name="query" id="query" title="Telusuri" class="focus:outline-none bg-transparent w-full text-white ml-2">
+      </div>
+
+      <div class="flex items-center justify-center space-x-4 font-thin text-sm mt-8">
+        <button class="px-4 pt-1 pb-2 bg-gray-50 dark:bg-neutral-700 text-gray-600 text-base dark:text-gray-300 rounded border border-transparent hover:border-gray-200 dark:border-transparent focus:outline-none dark:hover:border-gray-500 hover:shadow">
+          Penelusuran Google
+        </button>
+        <button class="px-4 pt-1 pb-2 bg-gray-50 dark:bg-neutral-700 text-gray-600 text-base dark:text-gray-300 rounded border border-transparent hover:border-gray-200 dark:border-transparent focus:outline-none dark:hover:border-gray-500 hover:shadow">
+          Saya Lagi Beruntung
+        </button>
+      </div>
+
+      <div class="flex items-center justify-center text-sm dark:text-gray-300 mt-6">
+        <p>Google tersedia dalam bahasa: 
+          <div class="ml-2 space-x-4">
+            <a href="#" class="text-blue-500 dark:text-blue-400 hover:underline">English</a>
+            <a href="#" class="text-blue-500 dark:text-blue-400 hover:underline">Basa Bali</a>
+          </div>
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <!--Footer (Privacy Policy, Language, etc)-->
+  <footer class="dark:bg-zinc-900 dark:text-white fixed bottom-0 w-screen dark:text-gray-400 tracking-tighter divide-y dark:divide-zinc-500 font-thin text-gray-500 bg-gray-100">
+    <div class="py-3 px-8">Indonesia</div>
+    <div class="py-3 px-10 lg:px-32 xl:px-10 flex flex-col md:flex-row justify-between items-center md:items-start">
+      <div class="space-x-8 tracking-tight mb-6 md:mb-0">
+        <a href="#" class="hover:underline">Tentang</a>
+        <a href="#" class="hover:underline">Periklanan</a>
+        <a href="#" class="hover:underline">Bisnis</a>
+        <a href="#" class="hover:underline">Cara Kerja Penelusuran</a>
+      </div>
+      <div class="space-x-8">
+        <a href="#" class="hover:underline">Privasi</a>
+        <a href="#" class="hover:underline">Persyaratan</a>
+        <a href="#" class="hover:underline">Setelan</a>
+      </div>
+  </div>
+  </footer>
+</body>
+</html>
